@@ -1,16 +1,21 @@
 Package: SIGNET
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Title: A Signed Network Spectral Clustering Algorithm
+Version: 0.0.0.1
+Authors@R:c( 
+    person("Sharon", "Xie", email = "sxie@pennmedicine.upenn.edu", role = c("aut", "cre")),
+    person("Panpan", "Zhang", email = "panpan.zhang@vumc.org", role = c("aut"),
+           comment = c(ORCID = "0000-0002-8211-5930"))
+           )
+Maintainer: Zongyue Teng <zongyue.teng@vanderbilt.edu>
+Description: This package collects utility functions for signed network clustering with data-driven selection of the number of clusters.
+Depends: R (>= 2.10)
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+Imports: igraph, rARPACK
+URL: https://github.com/zongyue-teng/SIGNET
+BugReports: https://github.com/zongyue-teng/SIGNET/issues
+RoxygenNote: 7.3.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,4 +1,35 @@
-.Rproj.user
+*.*~
+*.Rcheck/
+*.Rout
+*.o
+*.so
+*.tar.gz
+*~
+README.html
+README_cache
+docs
+revdep
+working
+
+# History files
 .Rhistory
-.RData
-.Ruserdata
+.Rapp.history
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+*.Rproj
+.Rproj.user
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# ignore tags
+TAGS
+GTAGS
+GRTAGS
+GPATH
+.clang_complete
+.clangd
