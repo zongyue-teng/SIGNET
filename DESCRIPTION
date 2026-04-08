@@ -2,7 +2,7 @@ Package: SIGNET
 Title: A Signed Network Spectral Clustering Algorithm
 Version: 0.0.0.1
 Authors@R:c( 
-    person("Sharon", "Xie", email = "sxie@pennmedicine.upenn.edu", role = c("aut", "cre")),
+    person("Zongyue", "Teng", email = "zongyue.teng@vanderbilt.edu", role = c("aut", "cre")),
     person("Panpan", "Zhang", email = "panpan.zhang@vumc.org", role = c("aut"),
            comment = c(ORCID = "0000-0002-8211-5930"))
            )
