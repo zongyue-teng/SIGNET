@@ -27,4 +27,8 @@ You can install the `SIGNET` package from GitHub with:
 devtools::install_github("zongyue-teng/SIGNET")
 ```
 
-## Reference
+## References
+
+<div id="refs">
+
+</div>

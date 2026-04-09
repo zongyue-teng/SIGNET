@@ -9,7 +9,8 @@ signet(
   K = NULL,
   Kmax = NULL,
   Kmin = 2,
-  method = c("eigen-gap", "sil-max", "sil-gap")
+  method = c("eigen-gap", "sil-max", "sil-gap"),
+  dist_fun = NULL
 )
 }
 \arguments{
@@ -21,11 +22,14 @@ signet(
 is unknown.}
 
 \item{Kmin}{is the minimum candidate value for the number of clusters if \code{K}
-is unknown; Default is 2.}
+is unknown. The default value is \code{2}.}
 
 \item{method}{allows the users to select the method for selecting the number of
 clusters among \code{eigen-gap} (eigen-gap heuristic), \code{sil-max} (maximum
 silhouette score) and \code{sil-gap} (silhouette-based gap criterion).}
+
+\item{dist_fun}{allows the users to specify their own distance function used to
+calculate the silhouette score. The default function is \code{1 - adj_mat}.}
 }
 \value{
 A list containing:
