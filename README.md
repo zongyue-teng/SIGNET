@@ -1,8 +1,14 @@
 SIGNET – Signed Network Spectral Clustering
 ================
 
-The $\mathtt{SIGNET}$ package intends to be a user-friendly package
-implementing a spectral clustering algorithm for signed networks.
+[![GitHub last
+commit](https://img.shields.io/github/last-commit/zongyue-teng/SIGNET)](https://github.com/zongyue-teng/SIGNET/commits/master)
+[![R-CMD-check](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml)
+[![GitHub
+License](https://img.shields.io/github/license/zongyue-teng/SIGNET?color=blue)](https://github.com/zongyue-teng/SIGNET/blob/master/LICENSE.md)
+
+The `SIGNET` package intends to be a user-friendly package implementing
+a spectral clustering algorithm for signed networks.
 
 ## Features
 
@@ -14,9 +20,11 @@ The package provides functions to
 
 ## Installation
 
-You can install the $\mathtt{SIGNET}$ package from GitHub with:
+You can install the `SIGNET` package from GitHub with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("zongyue-teng/SIGNET")
 ```
+
+## Reference
