@@ -52,7 +52,7 @@ NULL
 #'
 #' @example inst/examples/ex-signet.R
 #'
-#' @keywords cluster number, signed network, spectral clustering
+#' @keywords clustering, network, silhouette
 #'
 #' @export
 
