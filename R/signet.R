@@ -31,12 +31,14 @@ NULL
 #' @param adj_mat is an adjacency matrix.
 #' @param K is the pre-specified number of clusters.
 #' @param Kmin is the minimum candidate value for the number of clusters if \code{K}
-#' is unknown; Default is 2.
+#' is unknown. The default value is \code{2}.
 #' @param Kmax is the maximum candidate value for the number of clusters if \code{K}
 #' is unknown.
 #' @param method allows the users to select the method for selecting the number of
 #' clusters among \code{eigen-gap} (eigen-gap heuristic), \code{sil-max} (maximum
 #' silhouette score) and \code{sil-gap} (silhouette-based gap criterion).
+#' @param dist_fun allows the users to specify their own distance function used to
+#' calculate the silhouette score. The default function is \code{1 - adj_mat}.
 #'
 #'@return A list containing:
 #'\describe{
@@ -58,7 +60,8 @@ signet <- function(adj_mat,
                    K = NULL,
                    Kmax = NULL,
                    Kmin = 2,
-                   method = c("eigen-gap", "sil-max", "sil-gap")) {
+                   method = c("eigen-gap", "sil-max", "sil-gap"),
+                   dist_fun = NULL) {
   # Sanity checks
   if (!isSymmetric(adj_mat)) {
     stop("The adjacency matrix is not symmetric!")
@@ -147,7 +150,17 @@ signet <- function(adj_mat,
 
     } else {
       # Silhouette-based approaches
-      dist_mat <- 1 - adj_mat ## adjacency-based distance
+      if (is.null(dist_fun)) {
+        dist_mat <- 1 - adj_mat ## adjacency-based distance (default)
+      } else {
+        if (!is.function(dist_fun)) {
+          stop("`dist_fun` must be a function or NULL.")
+        }
+        dist_mat <- dist_fun(adj_mat)
+      }
+      if (!is.matrix(dist_mat) || any(dim(dist_mat) != dim(adj_mat))) {
+        stop("`dist_fun(adj_mat)` must return a matrix with the same dimensions as `adj_mat`!")
+      }
       diag(dist_mat) <- 0
 
       res <- lapply(K_candidate, function(k) {
