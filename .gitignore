@@ -33,3 +33,6 @@ GRTAGS
 GPATH
 .clang_complete
 .clangd
+
+# macOS system files
+.DS_Store
