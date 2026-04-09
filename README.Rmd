@@ -1,7 +1,6 @@
 ---
 title: SIGNET -- Signed Network Spectral Clustering
-output: github_document:
-  pandoc_args: [ "--wrap=preserve", "--columns=80" ]
+output: github_document
 bibliography: inst/REFERENCES.bib
 ---
 
@@ -9,6 +8,8 @@ bibliography: inst/REFERENCES.bib
 knitr::opts_chunk$set(echo = TRUE)
 library(SIGNET)
 ```
+
+## Objectives
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/zongyue-teng/SIGNET)](https://github.com/zongyue-teng/SIGNET/commits/master)
 [![R-CMD-check](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml)
