@@ -2,6 +2,7 @@
 title: SIGNET -- Signed Network Spectral Clustering
 output: github_document
 bibliography: inst/REFERENCES.bib
+nocite: '@*'
 ---
 
 ```{r setup, include = FALSE}

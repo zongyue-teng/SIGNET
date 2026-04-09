@@ -29,6 +29,26 @@ devtools::install_github("zongyue-teng/SIGNET")
 
 ## References
 
-<div id="refs">
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-kunegis2010spectral" class="csl-entry">
+
+Kunegis, Jérôme, Stephan Schmidt, Andreas Lommatzsch, Jürgen Lerner, W.
+Ernesto De Luca, and Sahin Albayrak. 2010. “Spectral Analysis of Signed
+Graphs for Clustering, Prediction and Visualization.” In *Proceedings of
+the 2010 SIAM International Conference on Data Mining (SDM 2010)*,
+edited by Srinivasan Parthasarathy, Bing Liu, Bart Goethals, Jian Pei,
+and Chandrika Kamath. SIAM; SIAM.
+
+</div>
+
+<div id="ref-teng2026signet" class="csl-entry">
+
+Teng, Zongyue, Dandan Liu, Angela L. Jefferson, and Panpan Zhang. 2026.
+*SIGNET: A Signed Network Spectral Clustering Method for Proteomic
+Module Discovery in Alzheimer’s Disease*. Vanderbilt University Medical
+Center.
+
+</div>
 
 </div>
