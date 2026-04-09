@@ -1,12 +1,19 @@
 ---
 title: SIGNET -- Signed Network Spectral Clustering
-output: github_document
+output: github_document:
+  pandoc_args: [ "--wrap=preserve", "--columns=80" ]
+bibliography: inst/REFERENCES.bib
 ---
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(SIGNET)
 ```
+
+[![GitHub R package version](https://img.shields.io/github/r-package/v/zongyue-teng/SIGNET?label=R%20in%20dev&color=green)](https://github.com/zongyue-teng/SIGNET/blob/main/DESCRIPTION)
+[![GitHub last commit](https://img.shields.io/github/last-commit/zongyue-teng/SIGNET)](https://github.com/zongyue-teng/SIGNET/commits/main)
+[![R-CMD-check](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zongyue-teng/SIGNET/actions/workflows/R-CMD-check.yaml)
+[![GitHub License](https://img.shields.io/github/license/zongyue-teng/SIGNET?color=blue)](https://github.com/zongyue-teng/SIGNET/blob/main/LICENSE.md)
 
 The $\mathtt{SIGNET}$ package intends to be a user-friendly package implementing a spectral clustering algorithm for signed networks. 
 
@@ -27,3 +34,5 @@ You can install the $\mathtt{SIGNET}$ package from GitHub with:
 # install.packages("devtools")
 devtools::install_github("zongyue-teng/SIGNET")
 ```
+
+## Reference {-}
