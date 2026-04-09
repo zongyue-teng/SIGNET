@@ -40,19 +40,19 @@ NULL
 #' @param dist_fun allows the users to specify their own distance function used to
 #' calculate the silhouette score. The default function is \code{1 - adj_mat}.
 #'
-#'@return A list containing:
-#'\describe{
-#'\item{method}{The method used to select the number of clusters.}
-#'\item{K_sel}{The selected number of clusters.}
-#'\item{cluster_res}{Cluster assignment under \code{K_sel}.}
-#'}
+#' @return A list containing:
+#' \describe{
+#' \item{method}{The method used to select the number of clusters.}
+#' \item{K_sel}{The selected number of clusters.}
+#' \item{cluster_res}{Cluster assignment under \code{K_sel}.}
+#' }
 #'
 #' @references
 #' \insertCite{kunegis2010spectral,teng2026signet}{SIGNET}.
 #'
-#'@example inst/examples/ex-signet.R
+#' @example inst/examples/ex-signet.R
 #'
-#' @keywords internal
+#' @keywords cluster number, signed network, spectral clustering
 #'
 #' @export
 

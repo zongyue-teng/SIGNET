@@ -59,4 +59,9 @@ myres <- signet(adj_mat = myadj_mat, Kmax = 10, method = "sil-gap")
 \references{
 \insertCite{kunegis2010spectral,teng2026signet}{SIGNET}.
 }
-\keyword{internal}
+\keyword{cluster}
+\keyword{clustering}
+\keyword{network,}
+\keyword{number,}
+\keyword{signed}
+\keyword{spectral}
