@@ -1,21 +1,20 @@
-Package: SIGNET
-Title: A Signed Network Spectral Clustering Algorithm
-Version: 0.0.0.1
-Authors@R:c( 
-    person("Zongyue", "Teng", email = "zongyue.teng@vanderbilt.edu", role = c("aut", "cre")),
-    person("Panpan", "Zhang", email = "panpan.zhang@vumc.org", role = c("aut"),
-           comment = c(ORCID = "0000-0002-8211-5930"))
-           )
-Maintainer: Zongyue Teng <zongyue.teng@vanderbilt.edu>
-Description: This package collects utility functions for signed network clustering with data-driven selection of the number of clusters.
-Depends: R (>= 2.10)
-License: GPL (>= 3)
+Package: SIGNET 
+Title: Signed Network Spectral Clustering Algorithm 
+Version: 0.0.0.9 
+Authors@R: c(person("Zongyue", "Teng", email = "zongyue.teng@vanderbilt.edu", role = c("aut", "cre")),
+             person("Dandan", "Liu", email = "dandan.liu@vumc.org", role = c("aut")), 
+             person("Panpan", "Zhang", email = "panpan.zhang@vumc.org", role = c("aut"), comment = c(ORCID = "0000-0002-8211-5930")) 
+             ) 
+Maintainer: Zongyue Teng <zongyue.teng@vanderbilt.edu> 
+Description: This package collects utility functions for signed network clustering with data-driven selection of the number of clusters. 
+Depends: R (>= 2.10) 
+License: GPL (>= 3) 
 Encoding: UTF-8
-LazyData: true
-Imports: igraph, rARPACK
-URL: https://github.com/zongyue-teng/SIGNET
-BugReports: https://github.com/zongyue-teng/SIGNET/issues
-RoxygenNote: 7.3.3
-Suggests: 
-    testthat (>= 3.0.0)
+LazyData: true 
+Imports: cluster, rARPACK, Rdpack, stats 
+RdMacros: Rdpack 
+URL: https://github.com/zongyue-teng/SIGNET 
+BugReports: https://github.com/zongyue-teng/SIGNET/issues 
+RoxygenNote: 7.3.3 
+Suggests: testthat (>= 3.0.0) 
 Config/testthat/edition: 3
