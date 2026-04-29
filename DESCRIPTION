@@ -11,7 +11,7 @@ Depends: R (>= 2.10)
 License: GPL (>= 3) 
 Encoding: UTF-8
 LazyData: true 
-Imports: cluster, rARPACK, Rdpack, stats 
+Imports: cluster, rARPACK, Rdpack, stats, mclust
 RdMacros: Rdpack 
 URL: https://github.com/zongyue-teng/SIGNET 
 BugReports: https://github.com/zongyue-teng/SIGNET/issues 
